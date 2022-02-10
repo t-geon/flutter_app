@@ -3,18 +3,14 @@ import 'package:flutter_app/pages/home_page.dart';
 import 'package:flutter_app/pages/login_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // 이 위젯이 어플의 루트
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //첫 페이지 로그인
-      initialRoute: "/login",
+      initialRoute: "/login", //첫 페이지 로그인
 
       //루트 설정
       routes: {
@@ -22,13 +18,19 @@ class MyApp extends StatelessWidget {
         "/home": (context) => HomePage(), //HomePage는 /home으로 사용
       },
 
-      //주제창 (색)
+      //테마 설정
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            backgroundColor: Colors.black, //로그인 버튼 색
+            primary: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+            minimumSize: Size(400, 60),
+          ),
+        ),
       ),
-
-      //주제창 (제목)
-      //home: const MyHomePage(title: 'Immune Monitoring System'),
     );
   }
 }
