@@ -19,7 +19,8 @@ class Custom extends StatelessWidget {
             onPressed: () {
               //값이 있는지 확인, 값이 있으면 if문으로 들어간다
               if (_formKey.currentState!.validate()) {
-                Navigator.pushNamed(context, "/home"); //로그인 버튼 누르면 홈으로 이동
+                //Navigator.pushNamed(context, "/home"); //로그인 버튼 누르면 홈으로 이동
+                Navigator.pushNamed(context, "/list");
               }
             },
             child: Text("Login"), //버튼에 Login쓰기

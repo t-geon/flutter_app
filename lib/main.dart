@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/home_page.dart';
+import 'package:flutter_app/pages/list_page.dart';
 import 'package:flutter_app/pages/login_page.dart';
 
 void main() {
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/login": (context) => LoginPage(), //LoginPage는 /login으로 사용
         "/home": (context) => HomePage(), //HomePage는 /home으로 사용
+        "/list": (context) => ListPage(), //ListPage는 /list로 사용
       },
 
       //테마 설정
