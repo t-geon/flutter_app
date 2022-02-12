@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/home_page.dart';
-import 'package:flutter_app/pages/list_page.dart';
-import 'package:flutter_app/pages/login_page.dart';
+import 'package:flutter_app/route.dart';
+import 'package:flutter_app/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,28 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: "/login", //첫 페이지 로그인
-
-      //루트 설정
-      routes: {
-        "/login": (context) => LoginPage(), //LoginPage는 /login으로 사용
-        "/home": (context) => HomePage(), //HomePage는 /home으로 사용
-        "/list": (context) => ListPage(), //ListPage는 /list로 사용
-      },
-
-      //테마 설정
-      theme: ThemeData(
-        textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.black, //로그인 버튼 색
-            primary: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
-            ),
-            minimumSize: Size(400, 60),
-          ),
-        ),
-      ),
+      initialRoute: "/splash", //첫 페이지 splash
+      routes: route, //루트 설정
+      theme: theme(), //테마 설정
     );
   }
 }

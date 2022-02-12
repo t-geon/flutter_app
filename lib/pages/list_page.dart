@@ -4,6 +4,8 @@ import 'package:flutter_app/model/patient.dart';
 
 //검사목록 페이지
 class ListPage extends StatelessWidget {
+  static String routeName = "/list";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
