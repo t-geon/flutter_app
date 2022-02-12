@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/size.dart';
+import 'package:flutter_app/constants.dart';
 
 //문자 입력하는 입력 위젯
 class TextForm extends StatelessWidget {
