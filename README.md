@@ -50,9 +50,9 @@ DVS로 촬영한 데이터를 사용해 백혈구의 개수를 예측해주는 �
 
 # 구성
 ## lib폴더
-- components 패키지 : page에 들어가는 문자입력, 로고, 메뉴 카드, 버튼 같은 구성요소들
-- model 패키지 : menu, patient 같은 종류가 있는 객체들을 생성 및 저장하고 있는 곳
-- pages 패키지 : 각 페이지 출력을 담당하는 곳
-- costants.dart : 많이 사용하는 공백, 색을 저장
-- route.dart : 각 page의 경로를 저장
-- theme.dart : 프로젝트에서 사용하는 글씨체, 앱 바 양식 
+    - components 패키지 : page에 들어가는 문자입력, 로고, 메뉴 카드, 버튼 같은 구성요소들
+    - model 패키지 : menu, patient 같은 종류가 있는 객체들을 생성 및 저장하고 있는 곳
+    - pages 패키지 : 각 페이지 출력을 담당하는 곳
+    - costants.dart : 많이 사용하는 공백, 색을 저장
+    - route.dart : 각 page의 경로를 저장
+    - theme.dart : 프로젝트에서 사용하는 글씨체, 앱 바 양식 
