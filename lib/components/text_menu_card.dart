@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+//옵션에 사용하는 글씨 버튼들
 class TextMenuCard extends StatelessWidget {
+  //입력받을 요소
   final String? title;
   final String? icon;
   final GestureTapCallback? press;
   final Color? textColor;
   final Color? iconColor;
 
+  //생성자
   const TextMenuCard({
     Key? key,
     this.title,

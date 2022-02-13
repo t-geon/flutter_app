@@ -4,6 +4,9 @@ import 'package:flutter_app/pages/list_page.dart';
 import 'package:flutter_app/pages/login_page.dart';
 import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/pages/result_page.dart';
+import 'package:flutter_app/pages/setting/id_page.dart';
+import 'package:flutter_app/pages/setting/notice_page.dart';
+import 'package:flutter_app/pages/setting/version_page.dart';
 import 'package:flutter_app/pages/setting_page.dart';
 import 'package:flutter_app/pages/sign_up_page.dart';
 import 'package:flutter_app/pages/splash_page.dart';
@@ -17,4 +20,7 @@ final Map<String, WidgetBuilder> route = {
   SettingPage.routeName: (context) => SettingPage(),
   MainPage.routeName: (context) => MainPage(),
   SignUpPage.routeName: (context) => SignUpPage(),
+  IdPage.routeName: (context) => IdPage(),
+  NoticePage.routeName: (context) => NoticePage(),
+  VersionPage.routeName: (context) => VersionPage(),
 };
