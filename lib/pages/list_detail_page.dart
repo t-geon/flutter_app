@@ -12,7 +12,11 @@ class _ListDetailPageState extends State<ListDetailPage> {
     //상세 페이지에 쓰일 것들
     return Container(
       child: Scaffold(
-        appBar: AppBar(), //앱바 두면 상단바에 뒤로가기 버튼 생긴다.
+        appBar: AppBar(
+          backgroundColor: Color(0xff1b50b6),
+          automaticallyImplyLeading: false,
+          title: Text("검사 상세 내용"),
+        ),
       ),
     );
   }

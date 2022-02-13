@@ -9,9 +9,10 @@ class ListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, //배경 하얀색
       appBar: AppBar(
-        title: Text("검사 목록"), //상단에 쓸거
+        backgroundColor: Color(0xff1b50b6),
+        automaticallyImplyLeading: false,
+        title: Text("검사 목록"),
       ),
       body: ListView(
         //리스트 생성
