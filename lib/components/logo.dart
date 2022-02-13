@@ -11,7 +11,7 @@ class Logo extends StatelessWidget {
       children: [
         SvgPicture.asset(
           //로고 삽입
-          "assets/logo.svg", //해당 경로에 있는 logo.svg 삽입
+          "assets/icons/logo.svg", //해당 경로에 있는 logo.svg 삽입
           height: 70, //크기 설정
           width: 70,
         ),

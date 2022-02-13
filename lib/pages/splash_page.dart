@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/constants.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'login_page.dart';
 
 class SplashPage extends StatelessWidget {
@@ -14,18 +15,21 @@ class SplashPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
+            //문구 삽입
             flex: 5,
             child: Center(
               child: Text(
-                "백혈구 검사 프로그램",
+                "white blood cell",
                 style: TextStyle(
-                    fontSize: 30,
+                    //fontFamily: 'pacifico',
+                    fontSize: 50.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
             ),
           ),
           Expanded(
+            //터치 해서 넘어가는 글자 삽입
             flex: 1,
             child: Padding(
               padding: EdgeInsets.all(24),

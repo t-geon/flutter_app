@@ -5,6 +5,7 @@ import 'package:flutter_app/pages/login_page.dart';
 import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/pages/result_page.dart';
 import 'package:flutter_app/pages/setting_page.dart';
+import 'package:flutter_app/pages/sign_up_page.dart';
 import 'package:flutter_app/pages/splash_page.dart';
 
 final Map<String, WidgetBuilder> route = {
@@ -15,4 +16,5 @@ final Map<String, WidgetBuilder> route = {
   ResultPage.routeName: (context) => ResultPage(),
   SettingPage.routeName: (context) => SettingPage(),
   MainPage.routeName: (context) => MainPage(),
+  SignUpPage.routeName: (context) => SignUpPage(),
 };
