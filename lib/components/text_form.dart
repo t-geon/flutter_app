@@ -14,13 +14,13 @@ class TextForm extends StatelessWidget {
         Text(text),
         SizedBox(height: s_gap),
         TextFormField(
-          validator: (value) => value!.isEmpty
-              ? "Please enter some text" //값 없으면 해당 문구 출력
+          validator: (value) => value!.isEmpty //값 없으면 해당 문구 출력
+              ? "${text}를 입력해주세요." //빨간색 문구 출력
               : null,
           obscureText: //TextFromField가 비밀번호 입력이면 *처리하기
-              text == "Password" ? true : false,
+              text == "비밀번호" ? true : false,
           decoration: InputDecoration(
-            hintText: "Enter $text",
+            hintText: "$text를 입력해주세요", //입력 칸 안에 비었을 때 문구
             enabledBorder: OutlineInputBorder(
               //기본 TextFormField 디자인
               borderRadius: BorderRadius.circular(20),

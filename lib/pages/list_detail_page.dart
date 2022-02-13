@@ -13,9 +13,13 @@ class _ListDetailPageState extends State<ListDetailPage> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xff1b50b6),
           automaticallyImplyLeading: false,
           title: Text("검사 상세 내용"),
+          leading: IconButton(
+              icon: Icon(
+                Icons.arrow_back,
+              ),
+              onPressed: () => Navigator.pop(context)),
         ),
       ),
     );
