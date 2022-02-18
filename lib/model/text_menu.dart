@@ -18,7 +18,10 @@ List<TextMenu> settingMenuList = [
 List<TextMenu> idMenuList = [
   //계정 정보 화면
   TextMenu(text: "로그아웃", icon: "assets/icons/right-arrow.svg", path: "/login"),
-  TextMenu(text: "비밀번호 변겅", icon: "assets/icons/right-arrow.svg", path: "/"),
+  TextMenu(
+      text: "비밀번호 변겅",
+      icon: "assets/icons/right-arrow.svg",
+      path: "/passwordchange"),
   TextMenu(text: "회원탈퇴", icon: "assets/icons/right-arrow.svg", path: "/"),
 ];
 

@@ -6,6 +6,7 @@ import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/pages/result_page.dart';
 import 'package:flutter_app/pages/setting/id_page.dart';
 import 'package:flutter_app/pages/setting/notice_page.dart';
+import 'package:flutter_app/pages/setting/password_change_page.dart';
 import 'package:flutter_app/pages/setting/version_page.dart';
 import 'package:flutter_app/pages/setting_page.dart';
 import 'package:flutter_app/pages/sign_up_page.dart';
@@ -23,4 +24,5 @@ final Map<String, WidgetBuilder> route = {
   IdPage.routeName: (context) => IdPage(),
   NoticePage.routeName: (context) => NoticePage(),
   VersionPage.routeName: (context) => VersionPage(),
+  PasswordChangePage.routeName: (context) => PasswordChangePage(),
 };
