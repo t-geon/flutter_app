@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/components/id_page_custtom.dart';
 
 class IdPage extends StatelessWidget {
   static String routeName = "/id";
@@ -15,7 +16,10 @@ class IdPage extends StatelessWidget {
             ),
             onPressed: () => Navigator.pop(context)),
       ),
-      body: Center(child: Text("id page")),
+      //body: Center(child: Text("id page")),
+      body: SingleChildScrollView(
+        child: IdPageCusttom(),
+      ),
     );
   }
 }
