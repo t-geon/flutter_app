@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
         title: Text("홈"),
       ),
       body: Center(child: Text("home page")),
+      //파일 넣기 만들어야할듯
     );
   }
 }

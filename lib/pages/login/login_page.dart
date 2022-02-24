@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/components/login_custom.dart';
-import 'package:flutter_app/components/logo.dart';
 import 'package:flutter_app/constants.dart';
 
 class LoginPage extends StatelessWidget {
@@ -14,7 +13,16 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: [
             SizedBox(height: xl_gap),
-            Logo("Login"), //"Login"을 Logo에 전달
+            Text(
+              'WBC Detector \n 로그인',
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.indigo,
+              ),
+            ),
+            //Logo("Login"), //"Login"을 Logo에 전달
             SizedBox(height: l_gap),
             LoginCustom(),
           ],
