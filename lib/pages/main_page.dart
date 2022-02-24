@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/constants.dart';
 import 'package:flutter_app/model/bottom_menu.dart';
 import 'package:flutter_app/pages/home_page.dart';
-import 'package:flutter_app/pages/list_page.dart';
+import 'package:flutter_app/pages/list/list_page.dart';
 import 'package:flutter_app/pages/result_page.dart';
-import 'package:flutter_app/pages/setting_page.dart';
+import 'package:flutter_app/pages/setting/setting_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class MainPage extends StatefulWidget {

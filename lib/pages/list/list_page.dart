@@ -5,6 +5,7 @@ import 'package:flutter_app/model/patient.dart';
 //검사목록 페이지
 class ListPage extends StatelessWidget {
   static String routeName = "/list";
+  final List<String> list = List.generate(10, (index) => "Text $index");
 
   @override
   Widget build(BuildContext context) {
