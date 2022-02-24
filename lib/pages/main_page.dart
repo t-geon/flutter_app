@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
         height: 38,
         child: IconButton(
           onPressed: press,
-          icon: SvgPicture.asset(icon ?? "assets/icons/logo.svg",
+          icon: SvgPicture.asset(icon ?? "assets/icons/down-arrow.svg",
               color: isActive ? PrimaryColor : Colors.black),
         ),
       ),

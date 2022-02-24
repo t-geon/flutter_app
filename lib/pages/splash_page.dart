@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'login_page.dart';
+import 'login/login_page.dart';
 
 class SplashPage extends StatelessWidget {
   static String routeName = "/splash";
@@ -19,9 +19,8 @@ class SplashPage extends StatelessWidget {
             flex: 5,
             child: Center(
               child: Text(
-                "white blood cell",
+                "WBC Detector",
                 style: TextStyle(
-                    //fontFamily: 'pacifico',
                     fontSize: 50.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),

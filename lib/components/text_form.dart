@@ -26,7 +26,11 @@ class TextForm extends StatelessWidget {
                           ? true
                           : text == "변경할 비밀번호 확인"
                               ? true
-                              : false,
+                              : text == "변경할 비밀번호 확인"
+                                  ? true
+                                  : text == "비밀번호 확인"
+                                      ? true
+                                      : false,
           decoration: InputDecoration(
             hintText: "$text를 입력해주세요", //입력 칸 안에 비었을 때 문구
             enabledBorder: OutlineInputBorder(

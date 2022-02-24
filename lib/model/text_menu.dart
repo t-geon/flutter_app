@@ -11,8 +11,6 @@ List<TextMenu> settingMenuList = [
   //옵션 화면 메뉴
   TextMenu(text: "계정 정보", icon: "assets/icons/right-arrow.svg", path: "/id"),
   TextMenu(text: "공지사항", icon: "assets/icons/right-arrow.svg", path: "/notice"),
-  TextMenu(
-      text: "버전정보", icon: "assets/icons/right-arrow.svg", path: "/version"),
 ];
 
 List<TextMenu> idMenuList = [
@@ -23,10 +21,4 @@ List<TextMenu> idMenuList = [
       icon: "assets/icons/right-arrow.svg",
       path: "/passwordchange"),
   TextMenu(text: "회원탈퇴", icon: "assets/icons/right-arrow.svg", path: "/"),
-];
-
-List<TextMenu> versionMenuList = [
-  //버전 정보 화면
-  TextMenu(text: "현재버전", icon: "assets/icons/right-arrow.svg", path: "/"),
-  TextMenu(text: "최신 버전", icon: "assets/icons/right-arrow.svg", path: "/"),
 ];
