@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/home_page.dart';
-import 'package:flutter_app/pages/list_page.dart';
+import 'package:flutter_app/pages/list/list_page.dart';
 import 'package:flutter_app/pages/login/find_id.dart';
 import 'package:flutter_app/pages/login/find_password.dart';
 import 'package:flutter_app/pages/login/login_page.dart';
@@ -10,7 +10,7 @@ import 'package:flutter_app/pages/setting/id_page.dart';
 import 'package:flutter_app/pages/setting/notice_page.dart';
 import 'package:flutter_app/pages/setting/password_change_page.dart';
 import 'package:flutter_app/pages/setting/version_page.dart';
-import 'package:flutter_app/pages/setting_page.dart';
+import 'package:flutter_app/pages/setting/setting_page.dart';
 import 'package:flutter_app/pages/login/sign_up_page.dart';
 import 'package:flutter_app/pages/splash_page.dart';
 

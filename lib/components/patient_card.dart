@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/model/patient.dart';
-import 'package:flutter_app/pages/list_detail_page.dart';
+import 'package:flutter_app/pages/list/list_detail_page.dart';
 
 class PatientCard extends StatelessWidget {
   const PatientCard({

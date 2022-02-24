@@ -22,7 +22,7 @@ final String _urlPrefix =
 List<Patient> patients = [
   Patient(
     image: "${_urlPrefix}_man_1.jpg",
-    title: "홍길동",
+    title: "hong",
     content: "검사 내용",
     time: "2022/01/01",
     count: "0",

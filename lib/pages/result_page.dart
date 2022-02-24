@@ -8,7 +8,7 @@ class ResultPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text("검사 결과"),
+        title: Text("측정 결과"),
       ),
       body: Center(child: Text("result page")),
     );
