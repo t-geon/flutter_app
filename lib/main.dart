@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/splash", //첫 페이지 splash
       routes: route, //루트 설정
       theme: theme(), //테마 설정
+      debugShowCheckedModeBanner: false, // 우측 상단 debug 띠 해제
     );
   }
 }
