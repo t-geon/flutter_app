@@ -6,7 +6,12 @@ import 'package:flutter_app/pages/login/find_id.dart';
 import 'package:flutter_app/pages/login/find_password.dart';
 
 //로그인 양식 작성된 곳
-class LoginCustom extends StatelessWidget {
+class LoginCustom extends StatefulWidget {
+  @override
+  State<LoginCustom> createState() => _LoginCustomState();
+}
+
+class _LoginCustomState extends State<LoginCustom> {
   final _formKey = GlobalKey<FormState>();
 
   @override
