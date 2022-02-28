@@ -4,6 +4,7 @@ import 'package:flutter_app/components/login_custom.dart';
 import 'package:flutter_app/constants.dart';
 import 'find_id.dart';
 import 'find_password.dart';
+
 class LoginPage extends StatefulWidget {
   static String routeName = "/login";
 
@@ -17,6 +18,8 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController _passwordController = TextEditingController();
   var _formKey = GlobalKey<FormState>();
   String? _passwordError;
+  String? _idError;
+
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(
                   hintText: "아이디를 입력하세요.",
                   labelText: "ID",
+                  errorText: _idError,
                   labelStyle: TextStyle(
                     fontSize: 15.0,
                     color: Colors.black,
@@ -116,19 +120,31 @@ class _LoginPageState extends State<LoginPage> {
               */
               // 로그인 버튼
               DefaultButton(
-                text: '로그인',
-                press: () {
-                print('Name ' + _idController.text);
-                print('Password ' + _passwordController.text);
-                setState(() {
-                  if (_passwordController.text.length < 3) {
-                    _passwordError = "Enter at least 3 words";
-                  } else { // 일단 3개 넘어가면 다음 화면으로 넘어갈수 있도록 구현함
-                    _passwordError = null;
-                    Navigator.pushNamed(context, "/main");
-                  }
-                });          
-              }),
+                  text: '로그인',
+                  press: () {
+                    print('Name ' + _idController.text);
+                    print('Password ' + _passwordController.text);
+                    setState(() {
+                      if (_passwordController.text.length < 3 &&
+                          _idController.text.length < 3) {
+                        //아이디 비밀번호 모두 미입력
+                        _passwordError = "Enter at least 3 words";
+                        _idError = "Enter at least 3 words";
+                      } else if (_idController.text.length < 3) {
+                        //아이디 미입력
+                        _idError = "Enter at least 3 words";
+                        _passwordError = "";
+                      } else if (_passwordController.text.length < 3) {
+                        //비밀번호 미입력
+                        _passwordError = "Enter at least 3 words";
+                        _idError = "";
+                      } else {
+                        // 일단 3개 넘어가면 다음 화면으로 넘어갈수 있도록 구현함
+                        _passwordError = null;
+                        Navigator.pushNamed(context, "/main");
+                      }
+                    });
+                  }),
               Padding(padding: EdgeInsets.symmetric(vertical: 10)),
               // 회원가입 버튼
               DefaultButton(
@@ -146,8 +162,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 onPressed: () {
                   // 아이디 찾는 페이지로 이동
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => FindID()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => FindID()));
+
                 },
               ),
               TextButton(
