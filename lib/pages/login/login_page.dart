@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/components/default_button.dart';
+import 'package:flutter_app/components/login_custom.dart';
 import 'package:flutter_app/constants.dart';
 import 'find_id.dart';
 import 'find_password.dart';
@@ -19,12 +20,13 @@ class _LoginPageState extends State<LoginPage> {
   String? _passwordError;
   String? _idError;
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       // GestureDetector widget 이용해서 unfocus 기능 구현
       body: GestureDetector(
-        onTap: () {
+        onTap: (){
           FocusScope.of(context).unfocus();
         },
         child: Padding(
@@ -162,6 +164,7 @@ class _LoginPageState extends State<LoginPage> {
                   // 아이디 찾는 페이지로 이동
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => FindID()));
+
                 },
               ),
               TextButton(
