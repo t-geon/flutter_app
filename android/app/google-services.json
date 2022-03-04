@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386249346414",
+    "project_id": "aijoah-wbc-detector",
+    "storage_bucket": "aijoah-wbc-detector.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386249346414:android:663edd58756e31aa91457f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386249346414-33k4ahsr5smgqn14v42q95bpolh84ei1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVa86-cqoE_y5J_rgg5zXgIqZCbD2oB38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386249346414-33k4ahsr5smgqn14v42q95bpolh84ei1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
