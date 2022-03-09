@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/components/default_button.dart';
 import 'package:flutter_app/components/login_custom.dart';
 import 'package:flutter_app/constants.dart';
+import 'package:flutter_app/pages/home_page.dart';
 import 'find_id.dart';
 import 'find_password.dart';
 import '../splash_page.dart';
@@ -73,7 +74,13 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   keyboardType: TextInputType.emailAddress,
                   obscureText: false, // 입력하는 동안 보이도록 설정
-                  maxLength: 20, // 20글자로 제한
+                  maxLength: 30, // 20글자로 제한
+                  onSaved: (value){
+                    userEmail = value!;
+                  },
+                  onChanged: (value){
+                    userEmail = value;
+                  },
                 ),
                 SizedBox(
                   height: 16,
@@ -105,6 +112,12 @@ class _LoginPageState extends State<LoginPage> {
                         },
                       )),
                   obscureText: _secureText,
+                  onSaved: (value){
+                    userPassword = value!;
+                  },
+                  onChanged: (value){
+                    userPassword = value;
+                  },
                 ),
                 SizedBox(
                   height: 20.0,
@@ -121,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                         if(newUser.user != null){
                           Navigator.push(context, MaterialPageRoute(
                             builder: (context) {
-                              return SplashPage();
+                              return HomePage();
                             }
                           ));
                         }
